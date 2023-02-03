@@ -1,5 +1,5 @@
 {% set name = "httpx-oauth" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/httpx-oauth-{{ version }}.tar.gz
-  sha256: 5ebd4abb8b1cc9b5b4673c1ef574fda19a52d1edead3325d38e6a65ae3c73ed6
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 12ce9d58a9bc5d0d4dbba22afaf033695d79078d08eaf949d71e1db97a830cb6
 
 build:
   number: 0
@@ -17,7 +17,8 @@ build:
 
 requirements:
   host:
-    - flit-core >=3.2,<4
+    - hatch-regex-commit
+    - hatchling
     - pip
     - python >=3.7
   run:
