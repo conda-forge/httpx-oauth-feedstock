@@ -1,11 +1,11 @@
-About httpx-oauth
-=================
+About httpx-oauth-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/httpx-oauth-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/frankie567/httpx-oauth
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/httpx-oauth-feedstock/blob/main/LICENSE.txt)
 
 Summary: Async OAuth client using HTTPX.
 
