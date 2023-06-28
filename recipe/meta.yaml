@@ -20,11 +20,10 @@ requirements:
     - hatch-regex-commit
     - hatchling
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - httpx >=0.18,<0.24
-    - python >=3.7
-    - typing-extensions
+    - python >=3.8
 
 test:
   source_files:
