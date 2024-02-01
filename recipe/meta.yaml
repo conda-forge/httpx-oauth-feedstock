@@ -20,11 +20,10 @@ requirements:
     - hatch-regex-commit
     - hatchling
     - pip
-    # python 3.12 seems to cause tests to fail
-    - python >=3.8,<3.12
+    - python >=3.8
   run:
     - httpx >=0.18,<0.27
-    - python >=3.8,<3.12
+    - python >=3.8
 
 test:
   source_files:
@@ -39,7 +38,8 @@ test:
   requires:
     - fastapi
     - pip
-    - pytest
+    # pytest-asyncio doesnt fully support pytest 8 yet
+    - pytest <8.0.0
     - pytest-asyncio
     - pytest-mock
     - respx
