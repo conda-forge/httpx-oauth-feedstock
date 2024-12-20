@@ -20,10 +20,10 @@ requirements:
     - hatch-regex-commit
     - hatchling
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - httpx >=0.18,<0.28
-    - python >=3.9
+    - python >={{ python_min }}
 
 test:
   source_files:
@@ -45,6 +45,7 @@ test:
     - respx
     - requests
     - starlette
+    - python {{ python_min }}
 
 about:
   home: https://github.com/frankie567/httpx-oauth
