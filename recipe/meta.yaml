@@ -1,5 +1,5 @@
 {% set name = "httpx-oauth" %}
-{% set version = "0.16.0" %}
+{% set version = "0.16.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5ce4696e4c9572711fb558808f7436afd7712db825c56b0f4f430e16c649f136
+  sha256: 7402f061f860abc092ea4f5c90acfc576a40bbb79633c1d2920f1ca282c296ee
 
 build:
   number: 0
