@@ -1,5 +1,5 @@
 {% set name = "httpx-oauth" %}
-{% set version = "0.16.0" %}
+{% set version = "0.16.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5ce4696e4c9572711fb558808f7436afd7712db825c56b0f4f430e16c649f136
+  sha256: 7402f061f860abc092ea4f5c90acfc576a40bbb79633c1d2920f1ca282c296ee
 
 build:
   number: 0
@@ -20,10 +20,10 @@ requirements:
     - hatch-regex-commit
     - hatchling
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
-    - httpx >=0.18,<0.28
-    - python >=3.9
+    - httpx >=0.18
+    - python >={{ python_min }}
 
 test:
   source_files:
@@ -45,6 +45,7 @@ test:
     - respx
     - requests
     - starlette
+    - python {{ python_min }}
 
 about:
   home: https://github.com/frankie567/httpx-oauth
