@@ -22,7 +22,7 @@ requirements:
     - pip
     - python {{ python_min }}
   run:
-    - httpx >=0.18,<0.28
+    - httpx >=0.18
     - python >={{ python_min }}
 
 test:
